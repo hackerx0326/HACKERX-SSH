@@ -1,0 +1,73 @@
+{    
+
+"name": "HACKERX-Manager-UserBot",
+    "description": "A bot that can Manage Your SSH",
+    "logo": "https://telegra.ph/file/a300722ddab9d8d24fc15.jpg",
+    "keywords": [
+        "ssh",
+        "ssh bot",
+        "darkssh",
+        "vpn-userbot"
+    ],
+    "website": "",
+    "repository": "https://github.com/hackerx0326/HACKERX-SSH",
+    "success_url": "https://t.me/YouTech_Support",
+    "env": {
+        "ADMINS": {
+            "description": "Your Telegram ID use @my_id_bot",
+            "value": "",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "Your telegram bot token",
+            "value": "",
+            "required": true
+        },
+        "SSH_IP": {
+            "description": "Your ssh vps ip",
+            "value": "",
+            "required": true
+        },
+        "SSH_USERNAME": {
+            "description": "Your ssh vps username",
+            "value": "",
+            "required": true
+        },
+        "SSH_PASS": {
+            "description": "Your ssh vps password",
+            "value": "",
+            "required": true
+        
+        },
+        "API_ID": {
+            "description": "You api id, from my.telegram.org or @ScrapperRoBot.",
+            "value": "", 
+            "required": false
+        },
+        "API_HASH": {
+            "description": "You api hash, from my.telegram.org or @ScrapperRoBot.",
+            "value": ""
+            
+        },
+        "STRING_SESSION": {
+            "description": "Your session string. Can be added now, or after deploy. (The bot will NOT work without a session string!!)",
+            "value": ""
+            
+        },
+        "BOT_USERNAME": {
+            "description": "Your telegram bot username",
+            "value": ""
+           
+        },
+        "BANNER_NAME": {
+            "description": "ssh account name like (☠️ HACKERX ☠️)",
+            "value": ""
+        }
+    },
+   "buildpacks": [
+    
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
